@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.top-header {
+    background-color: #3F3F3F;
+    padding: 20px 0px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cleaner {
+    clear: both;
+}
+
+.logo {
+    float: left;
+}
+
+.site-login {
+    float: right;
+}
+
+.logo img {
+    width: 150px;
+}
+.search-form {
+  padding-top: 5px;
+    text-align: center;
+}
+.search-form input,
+.search-form button {
+    vertical-align: middle;
+    height: 37px;
+}
+.search-form input {
+    border: 0;
+    outline: 0;
+    border-radius: 18px 0 0 18px;
+    padding: 0 8px;
+    font-size: 18px;
+    width: 300px;
+}
+
+.search-form button {
+    border: 0;
+    background-color: #3C948B;
+    color: white;
+    width: 60px;
+    font-size: 18px;
+    border-radius: 0 18px 18px 0 ;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.search-form button:hover {
+    background-color: #71c5bd;
+}
+.site-menu {
+    background-color: #71c5bd;
+
+}
+
+.site-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-list>li{
+    display: inline-block;
+    position: relative;
+}
+
+.menu-list li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    height: 41px;
+    padding: 15px 10px;
+}
+
+.menu-list>li:hover>a, 
+.menu-list a:hover {
+    background-color: #3f3f3f;
+}
+
+/* .menu-list>li>ul>a  instead of a long selector, we add a new class ('sub-menu') to ul. no more than 2 selectors.. */
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    background-color: hotpink;
+    color: black;
+    min-width: 200px;
+}
+
+.menu-list > li:hover .sub-menu{
+    display: block;
+}
+
+.chat {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 50px;
+    width: 250px;
+    height: 250px;
+    border: 1px solid red;
+}
+
+.chat-bubble{
+    border-style: solid;
+    border-radius : 50%;
+    border: 2px solid black;
+    background-color: yellow;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    padding: 5px;
+}
+
+.chat-window {
+    position: absolute;
+    bottom: 100%;
+    right: 100%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: blue;
+    display: none;
+    padding: 5px;
+
+}
+
+.chat-bubble:hover .chat-window {
+display: block;
+}
